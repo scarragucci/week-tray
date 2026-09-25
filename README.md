@@ -37,3 +37,7 @@ Exit a running WeekTray first, or the exe stays locked.
 WeekTray.exe                      run in the tray
 WeekTray.exe --export-icons DIR   write week-01..week-53.ico + app.ico, then exit
 ```
+
+## License
+
+[MIT](LICENSE)
