@@ -2,6 +2,7 @@
 # Usage:  powershell -ExecutionPolicy Bypass -File build.ps1
 $ErrorActionPreference = 'Stop'
 Set-Location $PSScriptRoot
+if (-not (Test-Path WeekTray.cs)) { throw "WeekTray.cs not found next to build.ps1. Extract the whole ZIP first, then build again." }
 $csc = "$env:WINDIR\Microsoft.NET\Framework64\v4.0.30319\csc.exe"
 
 function Compile([string[]]$extra) {
